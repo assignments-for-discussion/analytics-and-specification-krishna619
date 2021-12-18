@@ -1,23 +1,13 @@
-var x=0;
-var i=0;
-var sum = 0;
+const assert = require("assert");
 function average(numbers) {
-  for(i=0;i< (numbers.length)
-      {
-        if(average[i]=='NaN')
-        {
-          x=x+1;
-          continue;
-        }
-        sum = sum + average[i];
-
-       if( numbers.length==0 || numbers.length == x)
-        {
-          return NaN;
-        }
-      }
-  return sum / (numbers.length - x);
+  return numbers.reduce((p, c)=> p + c, 0) / numbers.length;
+  describe('Function returning NaN', average(numbers) {
+  it('shall return NaN', average(numbers) {
+    assert.notEqual(isNaN(average(numbers)), true); // No AssertionError
+  });
+});
 }
+
 
 
 
