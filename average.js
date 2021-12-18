@@ -1,4 +1,4 @@
-//const assert = require("assert");
+const assert = require("assert");
 var number2;
 function average(numbers) {
     number2 = numbers;
@@ -6,8 +6,9 @@ function average(numbers) {
 }
 describe('Function returning NaN', function() {
     it('shall return NaN', function() {
-        number2.isNaN(NaN)
-        //assert.notEqual(isNaN, true); // No AssertionError
+        assert.equal(isNaN(average(number2)), false); // AssertionError: NaN == NaN
+        assert.notEqual(isNaN(average(number2), true); // No AssertionError
+        
     });
 });
 
