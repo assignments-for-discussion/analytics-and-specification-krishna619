@@ -8,7 +8,7 @@ function average(numbers) {
 describe('Function returning NaN', function() {
             it('shall return NaN', function() {
                     
-                    assert.Equal(isNaN(average(number2)), true); // No AssertionError
+                    assert.equal(isNaN(average(number2)), true); // No AssertionError
 
                     });
             });
