@@ -1,5 +1,5 @@
 var sum = 0;
-car x=0;
+var x=0;
 var i =0;
 function average(numbers) {
   for(i=0;i< (numbers.length)
