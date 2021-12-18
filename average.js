@@ -4,8 +4,8 @@ function average(numbers) {
 }
 describe('Function returning NaN', function () {
   it('shall return NaN', function () {
-    assert.equal(isNaN(functionUnderTest()), false); // AssertionError: NaN == NaN
-    assert.notEqual(isNaN(functionUnderTest()), true); // No AssertionError
+    assert.equal(isNaN(average(numbers)), false); // AssertionError: NaN == NaN
+    assert.notEqual(isNaN(average(numbers)), true); // No AssertionError
   });
 });
 
