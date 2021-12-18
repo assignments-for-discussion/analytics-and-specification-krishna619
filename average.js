@@ -2,7 +2,7 @@ var x=0;
 var i=0;
 var sum = 0;
 function average(numbers) {
-  for(i=0;i< (numbers.length);i
+  for(i=0;i< (numbers.length){
      
     if(average[i]=='NaN'){
       x=x+1;
