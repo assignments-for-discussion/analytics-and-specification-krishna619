@@ -1,11 +1,12 @@
 const assert = require("assert");
 
 function average(numbers) {
+    window.numbers = numbers;
     return numbers.reduce((p, c) => p + c, 0) / numbers.length;
 }
 describe('Function returning NaN', function() {
     it('shall return NaN', function() {
-        assert.notEqual(isNaN(average(numbers)), true); // No AssertionError
+        assert.notEqual(isNaN(average(window.numbers)), true); // No AssertionError
     });
 });
 
