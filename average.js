@@ -1,4 +1,4 @@
-const assert = require("assert");
+//const assert = require("assert");
 var number2;
 function average(numbers) {
     number2 = numbers;
