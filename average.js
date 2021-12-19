@@ -6,11 +6,11 @@ function average(numbers)
 {
     for (i = 0; i < numbers.length; i++) 
     {
-        if (isNaN(average[i]) 
-            {
-                average[i] = 0;
-                x = x + 1;
-            }
+        if (isNaN(average[i]))
+        {
+            average[i] = 0;
+            x = x + 1;
+        }    
     }
         return numbers.reduce((p, c) => p + c, 0) / (numbers.length - x);
 }
