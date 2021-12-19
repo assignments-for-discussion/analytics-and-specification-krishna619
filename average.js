@@ -1,28 +1,15 @@
-var sum = 0;
-var x=0;
-var i =0;
+const assert = require("assert");
+var number2;
 function average(numbers) {
-  for(i=0;i< (numbers.length); i++)
-      if(average[i]==NaN)
-      {
-        x=x+1;
-        continue;
-      }
-      sum = sum + average[i];
-        if(average[i]==NaN)
-        {
-          x=x+1;
-          continue;
-        }
-        sum = sum + average[i];
-
-     if( numbers.length==0 || numbers.length == x)
-      {
-        return NaN;
-       if( numbers.length==0 || numbers.length == x)
-        {
-          return NaN;
-        }
-      }
-  return sum / (numbers.length - x);
+    number2 = numbers;
+    return numbers.reduce((p, c) => p + c, 0) / numbers.length;
 }
+describe('Function returning NaN', function() {
+            it('shall return NaN', function() {
+
+                    assert.equal(isNaN(average(number2)), true); // No AssertionError
+                    assert.NotEqual(isNaN(average(number2)), false); // No AssertionError
+
+                    });
+            });
+module.exports = {average};
