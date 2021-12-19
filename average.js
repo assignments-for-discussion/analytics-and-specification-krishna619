@@ -9,12 +9,19 @@ function average(numbers)
     {
         if (isNaN(average[i]))
         {
-            average[i] = 0;
-            x = x + 1;
-        } 
+            continue;
+        }   
         sum = sum + average[i];
+        x = x + 1;
+        
+        
+        
     }
-        return sum / (numbers.length - x);
+    if(x < 1)
+    {
+        x=1;
+    }
+        return sum /x;
 }
 
 module.exports = {average};
