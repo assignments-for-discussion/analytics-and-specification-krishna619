@@ -13,7 +13,7 @@ function average(numbers)
             numbers[i] = 0;
             x = x + 1;
         }    
-        } 
+        
         sum = sum + numbers[i];
     }
         
