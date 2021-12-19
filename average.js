@@ -5,7 +5,7 @@ var i = 0;
 function average(numbers) {
     for (i = 0; i < numbers.length; i++) {
         if (isNaN(average[i]) {
-                averagr[i] = 0;
+                average[i] = 0;
                 x = x + 1;
             }
         }
