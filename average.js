@@ -1,4 +1,3 @@
-
 var x = 0;
 var i = 0;
 var sum=0;
@@ -7,21 +6,18 @@ function average(numbers)
 {
     for (i = 0; i < numbers.length; i++) 
     {
+        
         if (isNaN(numbers[i]))
         {
-            continue;
-        }   
+            
+            numbers[i] = 0;
+            x = x + 1;
+        }    
+        } 
         sum = sum + numbers[i];
-        x = x + 1;
-        
-        
-        
     }
-    if(x < 1)
-    {
-        x=1;
-    }
-        return sum /x;
+        
+        return sum / (numbers.length - x);
 }
 
 module.exports = {average};
