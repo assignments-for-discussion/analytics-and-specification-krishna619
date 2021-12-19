@@ -7,11 +7,11 @@ function average(numbers)
 {
     for (i = 0; i < numbers.length; i++) 
     {
-        if (isNaN(average[i]))
+        if (isNaN(numbers[i]))
         {
             continue;
         }   
-        sum = sum + average[i];
+        sum = sum + numbers[i];
         x = x + 1;
         
         
