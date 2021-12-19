@@ -6,9 +6,9 @@ function average(numbers)
 {
     for (i = 0; i < numbers.length; i++) 
     {
-        if (isNaN(average[i]))
+        if (isNaN(average[i].value))
         {
-            average[i] = 0;
+            average[i].value = 0;
             x = x + 1;
         }    
     }
